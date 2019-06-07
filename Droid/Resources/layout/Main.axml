@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MvvmCross.Platforms.Android.Binding.Views.MvxLinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:minWidth="25px"
+	android:minHeight="25px">
+    <ProgressBar
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/progressBar"
+    android:indeterminate="false"
+    android:layout_gravity="center_horizontal"
+    local:MvxBind="Visibility Visibility(!LayoutVisibility)"/>
+	<MvvmCross.Platforms.Android.Binding.Views.MvxLinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+		android:id="@+id/mainLayout"
+        local:MvxBind="Visibility Visibility(LayoutVisibility)">
+    
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/editText1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            local:MvxBind="Text AirportCode; " />
+         />
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp" 
+            local:MvxBind="Click SearchCommand"
+        />
+    
+    </MvvmCross.Platforms.Android.Binding.Views.MvxLinearLayout>
+	<MvvmCross.Droid.Support.V7.RecyclerView.MvxRecyclerView
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/recyclerView1"
+		android:layout_weight="1"
+		android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+		android:layout_marginBottom="15dp"
+        local:MvxBind="ItemsSource FlightsCollection"
+        local:MvxItemTemplate="@layout/item_view"
+	 />
+</MvvmCross.Platforms.Android.Binding.Views.MvxLinearLayout>
