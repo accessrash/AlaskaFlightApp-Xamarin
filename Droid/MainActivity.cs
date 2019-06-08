@@ -8,11 +8,12 @@ using MvvmCross.ViewModels;
 using MvvmCross.Base;
 using Android.Views.InputMethods;
 using Android.Content;
+using AlaskaFlightApp.Core.Contracts.Interactions;
 
 namespace AlaskaFlightApp.Droid
 {
     [Activity(Label = "AlaskaFlightApp", MainLauncher = true, Icon = "@mipmap/icon")]
-    public class MainActivity : MvxActivity
+    public class MainActivity : MvxActivity, IKeyboard
     {
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -22,6 +23,15 @@ namespace AlaskaFlightApp.Droid
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
+            (this.ViewModel as MainViewModel).keyboard = this;
+
+
+        }
+
+        public void dismissKeyboard()
+        {
+            InputMethodManager imm = (InputMethodManager)GetSystemService(Context.InputMethodService);
+            imm.HideSoftInputFromWindow(FindViewById(Resource.Id.searchText).WindowToken, 0);
         }
     }
 }

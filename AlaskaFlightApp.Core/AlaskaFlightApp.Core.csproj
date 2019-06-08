@@ -13,5 +13,6 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Services\General\" />
+    <Folder Include="Contracts\Interactions\" />
   </ItemGroup>
 </Project>

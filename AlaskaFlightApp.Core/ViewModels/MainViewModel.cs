@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
+using AlaskaFlightApp.Core.Contracts.Interactions;
 using AlaskaFlightApp.Core.Contracts.Service;
 using AlaskaFlightApp.Core.Models;
 using MvvmCross.Commands;
@@ -15,6 +16,7 @@ namespace AlaskaFlightApp.Core.ViewModels
         private readonly IConnectionService _connectionService;
         private readonly IDialogService _dialogService;
         private readonly IMvxNavigationService _mvxNavigationService;
+        public IKeyboard keyboard;
 
         private ObservableCollection<FlightModel> _flightsCollection;
         public ObservableCollection<FlightModel> FlightsCollection
@@ -51,6 +53,7 @@ namespace AlaskaFlightApp.Core.ViewModels
             {
                 return new MvxCommand(async () =>
                 {
+                    keyboard.dismissKeyboard();
                     if (_connectionService.CheckOnline())
                     {
                         LayoutVisibility = false;
