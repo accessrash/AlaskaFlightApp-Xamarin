@@ -154,6 +154,7 @@
     <Compile Include="MainApplication.cs" />
     <Compile Include="Services\DialogService.cs" />
     <Compile Include="Setup.cs" />
+    <Compile Include="DetailsActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -170,6 +171,7 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\Icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\Icon.png" />
     <AndroidResource Include="Resources\layout\item_view.axml" />
+    <AndroidResource Include="Resources\layout\DetailsView.axml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\AlaskaFlightApp.Core\AlaskaFlightApp.Core.csproj">
