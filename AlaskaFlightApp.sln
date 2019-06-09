@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlaskaFlightApp.iOS", "iOS\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AlaskaFlightApp.Core", "AlaskaFlightApp.Core\AlaskaFlightApp.Core.csproj", "{0736B78C-6AD2-4687-B913-B5749FC09B5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{0736B78C-6AD2-4687-B913-B5749FC09B5B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{0736B78C-6AD2-4687-B913-B5749FC09B5B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
 		{0736B78C-6AD2-4687-B913-B5749FC09B5B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Release|iPhone.Build.0 = Release|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{ABD47D75-2DEF-4420-854C-FBDBDD6C5D9B}.Debug|iPhone.Build.0 = Debug|Any CPU
 	EndGlobalSection
 EndGlobal
